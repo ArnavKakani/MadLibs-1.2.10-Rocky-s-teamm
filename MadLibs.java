@@ -1,0 +1,107 @@
+import java.util.Scanner;
+
+public class MadLibs {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+
+    System.out.print("Enter an animal (protagonist): ");
+    String animal1 = in.nextLine();
+
+    System.out.print("Enter a place (singular): ");
+    String place = in.nextLine();
+
+    System.out.print("Enter another animal (the one being asked the time): ");
+    String animal2 = in.nextLine();
+
+
+    System.out.print("Enter a person's name: ");
+    String personName = in.nextLine();
+
+    System.out.print("Enter a verb (base form): ");
+    String verb = in.nextLine();
+
+    System.out.print("Enter an object: ");
+    String object1 = in.nextLine();
+
+    System.out.print("Enter a vehicle: ");
+    String vehicle = in.nextLine();
+
+    System.out.print("Enter an adjective: ");
+    String adjective1 = in.nextLine();
+
+    System.out.print("Enter a creature: ");
+    String creature = in.nextLine();
+
+    System.out.print("Enter a funny phrase: ");
+    String funnyPhrase = in.nextLine();
+
+    System.out.print("Enter places (plural): ");
+    String placesPlural = in.nextLine();
+
+    System.out.print("Enter a plural noun: ");
+    String pluralNoun = in.nextLine();
+
+    System.out.print("Enter another adjective: ");
+    String adjective2 = in.nextLine();
+
+    System.out.print("Enter another object: ");
+    String object2 = in.nextLine();
+
+    System.out.print("Enter a color: ");
+    String color1 = in.nextLine();
+
+    System.out.print("Enter a silly noun: ");
+    String sillyNoun = in.nextLine();
+
+    System.out.print("Enter a time (e.g., 12:34): ");
+    String time = in.nextLine();
+
+    System.out.print("Enter another color: ");
+    String color2 = in.nextLine();
+
+    String responseTime = subtractMinutes(time, 9);
+
+    System.out.println();
+    System.out.println("--- Your MadLibs Story ---");
+    System.out.println("One day a " + animal1 + " walked into a " + place + ".");
+    System.out.println("He then asked a " + animal2 + " what was the time.");
+    System.out.println("The " + animal2 + " responded " + responseTime + ".");
+    System.out.println("This meant " + personName + " had 9 minutes left before he " + verb + ".");
+    System.out.println();
+    System.out.println("Panicking, the " + animal1 + " grabbed a " + object1 + " and ran toward the " + vehicle + " parked outside.");
+    System.out.println("Along the way, a " + adjective1 + " " + creature + " tried to stop him by yelling, \"" + funnyPhrase + "!\"");
+    System.out.println("But there was no time to waste.");
+    System.out.println();
+    System.out.println("He sprinted past the " + placesPlural + ", through a crowd of " + pluralNoun + ", and into the " + adjective2 + " building.");
+    System.out.println("Inside, he found a " + object2 + " glowing with a " + color1 + " light.");
+    System.out.println("Picking it up, he realized it was the key to saving " + sillyNoun + ".");
+    System.out.println();
+    System.out.println("With only seconds left, the " + animal1 + " shouted to " + personName + ", \"We must " + verb + " before it’s too late!\"");
+    System.out.println("The clock struck " + time + ", and suddenly everything turned " + color2 + ".");
+
+    in.close();
+  }
+
+  public static String subtractMinutes(String timeStr, int minutesToSubtract) {
+    try {
+      String[] parts = timeStr.split(":");
+      int hours = Integer.parseInt(parts[0]);
+      int minutes = Integer.parseInt(parts[1]);
+      
+      minutes -= minutesToSubtract;
+      
+      if (minutes < 0) {
+        minutes += 60;
+        hours -= 1;
+      }
+      
+      if (hours < 0) {
+        hours += 24;
+      }
+      
+      return String.format("%d:%02d", hours, minutes);
+    } catch (Exception e) {
+      return timeStr;
+    }
+  }
+}
