@@ -1,44 +1,44 @@
-import java.util.Scanner;
+import java.util.Scanner; // Imports java scanner 
 
 public class MadLibs {
-  public static void main(String[] args) {
-    Scanner in = new Scanner(System.in);
+  public static void main(String[] args) { // Starts a Public Class
+    Scanner in = new Scanner(System.in); // Starting a Scanner 
 
     System.out.print("Enter an animal (protagonist): ");
-    String animal1 = in.nextLine();
+    String animal1 = in.nextLine(); // Starts the story and ask for a protagnist 
 
-    System.out.print("Enter a place (singular): ");
+    System.out.print("Enter a place (singular): "); // Input a place 
     String place = in.nextLine();
 
-    System.out.print("Enter another animal (the one being asked the time): ");
+    System.out.print("Enter another animal (the one being asked the time): "); //  Input a another animal other than the protagnist
     String animal2 = in.nextLine();
 
 
-    System.out.print("Enter a person's name: ");
+    System.out.print("Enter a person's name: "); // Enter the Persons Name
     String personName = in.nextLine();
 
-    System.out.print("Enter a verb (base form): ");
+    System.out.print("Enter a verb (base form): "); // Add a verb 
     String verb = in.nextLine();
 
-    System.out.print("Enter an object: ");
+    System.out.print("Enter an object: "); // Enter a object 
     String object1 = in.nextLine();
 
-    System.out.print("Enter a vehicle: ");
+    System.out.print("Enter a vehicle: "); // enter  vehicle 
     String vehicle = in.nextLine();
 
-    System.out.print("Enter an adjective: ");
+    System.out.print("Enter an adjective: "); // Enter a adjective 
     String adjective1 = in.nextLine();
 
-    System.out.print("Enter a creature: ");
+    System.out.print("Enter a creature: "); // Enter the Creature 
     String creature = in.nextLine();
 
-    System.out.print("Enter a funny phrase: ");
+    System.out.print("Enter a funny phrase: "); // Enter a funny phase 
     String funnyPhrase = in.nextLine();
 
-    System.out.print("Enter places (plural): ");
+    System.out.print("Enter places (plural): "); // Enter places 
     String placesPlural = in.nextLine();
 
-    System.out.print("Enter a plural noun: ");
+    System.out.print("Enter a plural noun: "); // 
     String pluralNoun = in.nextLine();
 
     System.out.print("Enter another adjective: ");
