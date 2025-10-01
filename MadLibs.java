@@ -5,7 +5,7 @@ public class MadLibs {
     Scanner in = new Scanner(System.in); // Starting a Scanner 
 
     System.out.print("Enter an animal (protagonist): ");
-    String animal1 = in.nextLine(); // Starts the story and ask for a protagnist 
+    String a1 = in.nextLine(); // Starts the story and ask for a protagnist 
 
     System.out.print("Enter a place (singular): "); // Input a place 
     String place = in.nextLine();
@@ -15,7 +15,7 @@ public class MadLibs {
 
 
     System.out.print("Enter a person's name: "); // Enter the Persons Name
-    String personName = in.nextLine();
+    String person = in.nextLine();
 
     System.out.print("Enter a verb (base form): "); // Add a verb 
     String verb = in.nextLine();
@@ -64,21 +64,21 @@ public class MadLibs {
 */
     System.out.println();
     System.out.println("--- Your MadLibs Story ---");
-    System.out.println("One day a " + animal1 + " walked into a " + place + ".");
-    System.out.println("He then asked a " + animal2 + " what was the time.");
-    System.out.println("The " + animal2 + " responded " + responseTime + ".");
-    System.out.println("This meant " + personName + " had 9 minutes left before he " + verb + ".");
+    System.out.println("One day a"  + " " + a1 + " walked into a"  + " " + place + ".");
+    System.out.println("He then asked a"  + " " + animal2 + " " + "what was the time.");
+    System.out.println("The " + animal2 + " " + "responded " + responseTime + ".");
+    System.out.println("This meant " + person + " had 9 minutes left before he " + verb + ".");
     System.out.println();
-    System.out.println("Panicking, the " + animal1 + " grabbed a " + object1 + " and ran toward the " + vehicle + " parked outside.");
-    System.out.println("Along the way, a " + adjective1 + " " + creature + " tried to stop him by yelling, \"" + funnyPhrase + "!\"");
+    System.out.println("Panicking, the" + " " + a1 + " grabbed a " + object1 + " and ran toward the " + vehicle + " parked outside.");
+    System.out.println("Along the way, a" + " " + adjective1 + " " + creature + " tried to stop him by yelling, \"" + funnyPhrase + "!\"");
     System.out.println("But there was no time to waste.");
     System.out.println();
-    System.out.println("He sprinted past the " + placesPlural + ", through a crowd of " + pluralNoun + ", and into the " + adjective2 + " building.");
+    System.out.println("He sprinted past the" + " " + placesPlural + ", through a crowd of " + pluralNoun + ", and into the " + adjective2 + " building.");
     System.out.println("Inside, he found a " + object2 + " glowing with a " + color1 + " light.");
-    System.out.println("Picking it up, he realized it was the key to saving " + sillyNoun + ".");
+    System.out.println("Picking it up, he realized it was the key to saving" + " "  + sillyNoun + ".");
     System.out.println();
-    System.out.println("With only seconds left, the " + animal1 + " shouted to " + personName + ", \"We must " + verb + " before it’s too late!\"");
-    System.out.println("The clock struck " + time + ", and suddenly everything turned " + color2 + ".");
+    System.out.println("With only seconds left, the" + " "  + a1 + " shouted to " + person + ", \"We must " + verb + " before it’s too late!\"");
+    System.out.println("The clock struck" + " "  + time + ", and suddenly everything turned" + " "  + color2 + ".");
 
     in.close();
   }
