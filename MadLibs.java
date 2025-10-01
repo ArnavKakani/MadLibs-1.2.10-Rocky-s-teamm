@@ -38,29 +38,30 @@ public class MadLibs {
     System.out.print("Enter places (plural): "); // Enter places 
     String placesPlural = in.nextLine();
 
-    System.out.print("Enter a plural noun: "); // 
+    System.out.print("Enter a plural noun: "); // Enter a Plural Noun 
     String pluralNoun = in.nextLine();
 
-    System.out.print("Enter another adjective: ");
+    System.out.print("Enter another adjective: "); // Enter a Adjective 
     String adjective2 = in.nextLine();
 
-    System.out.print("Enter another object: ");
+    System.out.print("Enter another object: ");  // Enter object
     String object2 = in.nextLine();
 
-    System.out.print("Enter a color: ");
+    System.out.print("Enter a color: "); //Enter Color RGB ect
     String color1 = in.nextLine();
 
-    System.out.print("Enter a silly noun: ");
+    System.out.print("Enter a silly noun: "); // Enter  Silly noun 
     String sillyNoun = in.nextLine();
 
-    System.out.print("Enter a time (e.g., 12:34): ");
+    System.out.print("Enter a time (e.g., 12:34): "); // Enter time 
     String time = in.nextLine();
 
-    System.out.print("Enter another color: ");
+    System.out.print("Enter another color: "); // Enter colors
     String color2 = in.nextLine();
 
-    String responseTime = subtractMinutes(time, 9);
-
+    String responseTime = subtractMinutes(time, 9); // Starts the Madlib 
+/* Starts the MadLib and uses the string the user perviously entered to finish the Madlib 
+*/
     System.out.println();
     System.out.println("--- Your MadLibs Story ---");
     System.out.println("One day a " + animal1 + " walked into a " + place + ".");
@@ -82,7 +83,7 @@ public class MadLibs {
     in.close();
   }
 
-  public static String subtractMinutes(String timeStr, int minutesToSubtract) {
+  public static String subtractMinutes(String timeStr, int minutesToSubtract) { 
     try {
       String[] parts = timeStr.split(":");
       int hours = Integer.parseInt(parts[0]);
