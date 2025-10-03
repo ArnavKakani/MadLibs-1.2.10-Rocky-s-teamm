@@ -60,7 +60,7 @@ public class MadLibs {
     String color2 = in.nextLine();
 
     String responseTime = subtractMinutes(time, 9); // Starts the Madlib 
-/* Starts the MadLib and uses the string the user perviously entered to finish the Madlib 
+/* Starts the MadLib and uses the string and fills in the madlibs up because it has information from above to fill it up
 */
     System.out.println();
     System.out.println("--- Your MadLibs Story ---");
