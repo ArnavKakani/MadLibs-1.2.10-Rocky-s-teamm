@@ -27,17 +27,12 @@ Enter an animal (protagonist): cat
 Enter a place (singular): park
 ...
 
-csharp
-Copy code
 
 ### 2. Story Generation
 The inputs are then inserted into the predefined story template. For example:
 One day a cat walked into a park.
 He then asked a dog what was the time.
 The dog responded 11:25.
-
-vbnet
-Copy code
 
 ### 3. Helper Function
 The program includes a helper function:
