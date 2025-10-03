@@ -55,23 +55,27 @@ Copy code
 The program includes a helper function:
 
 ```java
-public static String subtractMinutes(String timeStr, int minutesToSubtract)
-This adjusts the given time string (formatted as HH:mm) by subtracting a specified number of minutes. It demonstrates modular programming and time manipulation logic.
+public static String subtractMinutes(String timeStr, int minutesToSubtract) {
+    // Adjusts the given time string (formatted as HH:mm)
+    // by subtracting a specified number of minutes.
+    // Demonstrates modular programming and time manipulation logic.
+}
+```
 
-Example Run
-User Input
+### Example Run
+#### User Input
 
-mathematica
+``` mathematica
 Copy code
 Enter an animal (protagonist): cat
 Enter a place (singular): park
 Enter another animal: dog
 Enter a person's name: Alex
 Enter a verb: run
-...
-Output Story
+```
+#### Output Story
 
-sql
+``` sql
 Copy code
 --- Your MadLibs Story ---
 One day a cat walked into a park.
@@ -83,51 +87,51 @@ Panicking, the cat grabbed a book and ran toward the bus parked outside.
 Along the way, a silly dragon tried to stop him by yelling, "Banana pancakes!"
 ...
 The clock struck 11:34, and suddenly everything turned purple.
-Functions Implemented
-main: Handles user interaction, input collection, and story assembly.
+```
+### Functions Implemented
+`main`: Handles user interaction, input collection, and story assembly.
 
-subtractMinutes: Takes a time string in HH:mm format and subtracts minutes, ensuring proper wrap-around for hours.
+`subtractMinute`s: Takes a time string in HH:mm format and subtracts minutes, ensuring proper wrap-around for hours.
 
-Development Milestones
-Planning
+### Development Milestones
+## Planning
 
 Defined the scope: at least 5–7 substitutions, modular functions, user prompts.
 
 Designed a multi-paragraph story template to maximize substitutions.
 
-Implementation
+#### Implementation
 
 Built the main method with user input prompts.
 
 Created the subtractMinutes helper function for added complexity.
 
-Testing
+#### Testing
 
 Tested with valid times (e.g., 12:34) and invalid formats to ensure safe error handling.
 
 Verified that all substitutions appear in the final output.
 
-Finalization
+#### Finalization
 
 Added inline comments for clarity.
 
 Prepared documentation (README) and repo structure.
 
-How to Run
+## How to Run
 Compile the program:
 
-bash
-Copy code
+```bash
 javac MadLibs.java
+```
 Run the program:
-
-bash
-Copy code
+```bash
 java MadLibs
+```
 Follow the on-screen prompts to input your words.
 
 
-Future Enhancements
+### Future Enhancements
 Add random template selection (multiple stories).
 
 Allow user to replay without restarting the program.
