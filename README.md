@@ -1,7 +1,7 @@
 # Mad Libs Word Substitution Generator
 
 ## Project Overview
-This project is a **Mad Libs Generator** implemented in Java. The program collects user input for different word categories (such as nouns, verbs, adjectives, and more) and dynamically inserts them into a predefined story template. The result is a humorous, randomized narrative generated from user-provided words.
+This project is a **Mad Libs Generator** implemented in Java. The program collects user input for different word categories (such as nouns, verbs, adjectives, and more) and dynamically inserts them into a predefined story template. The result is a funny (hopefully), randomized narrative generated from user-provided words.
 
 This assignment demonstrates core programming skills in:
 - String manipulation
@@ -9,7 +9,6 @@ This assignment demonstrates core programming skills in:
 - Basic function usage and modular programming
 - Input handling and formatted output
 
----
 
 ## Features
 - Accepts **15+ user inputs** for different categories of words (animals, objects, adjectives, colors, places, etc.).
@@ -17,17 +16,6 @@ This assignment demonstrates core programming skills in:
 - Includes a helper function `subtractMinutes` that adjusts a given time by subtracting a number of minutes.
 - Story template contains multiple paragraphs with a beginning, middle, and end for added immersion.
 - Error-handling in the `subtractMinutes` function ensures invalid inputs don’t crash the program.
-
----
-
-## File Structure
-├── MadLibs.java # Main program file containing logic and story
-├── README.md # Documentation and explanation of project
-
-yaml
-Copy code
-
----
 
 ## How It Works
 
